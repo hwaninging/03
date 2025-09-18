@@ -3,14 +3,15 @@
 
 int main(int argc, char *argv[]) {
     
-    char c;
-    int i;
+    char c, d; //문자 변수 선언  
+    //변수 구분 해준 것 d 대신에 c+1 넣어도됨  
     
-    printf("input  number:");
-    scanf("%c",&c);
+    printf("enter a character: ");
+    scanf("%c",&c); //scanf 통한 문자 입력  
     
-    i= c - '0';
-    printf("The input number is %i\n", i);
+    d= c + 1; //문자변수에 1을 더하면 알파벳 다음 문자로 가능 
+    printf("The next character of %c (%i) is %c (%i).\n",c, c, d, d);
+    system("PAUSE");
     
   return 0;
 }
