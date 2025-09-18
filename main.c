@@ -3,14 +3,15 @@
 
 int main(int argc, char *argv[]) {
     
-    char c, d; //문자 변수 선언  
-    //변수 구분 해준 것 d 대신에 c+1 넣어도됨  
+    int ja, mo; //분'자' 분'모'
     
-    printf("enter a character: ");
-    scanf("%c",&c); //scanf 통한 문자 입력  
+    printf("분자를 입력하세요:");
+    scanf("%d", &ja);
     
-    d= c + 1; //문자변수에 1을 더하면 알파벳 다음 문자로 가능 
-    printf("The next character of %c (%i) is %c (%i).\n",c, c, d, d);
+    printf("분모를 입력하세요:");
+    scanf("%d", &mo);
+    
+    printf("나누기의 결과는 %f\n", (float)ja/mo); // (float)을 쓰면 소숫점이 나옴 
     system("PAUSE");
     
   return 0;
